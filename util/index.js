@@ -1,10 +1,11 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const util = require("util")
+// const util = require("util")
 
 const generatorMarkdown = require('./generateMarkdown')
 
-const questions = ([
+// array of questions
+const questions = [
     {
       type: 'input',
       message: 'What is the title of the project?',
@@ -42,19 +43,31 @@ const questions = ([
     },
     {
         type: "input",
+        message: "Did you provide any tests? If so, could you provide any details",
+        name: "Tests"
+    },
+    {
+        type: "input",
         message: "Contact info for inquiries",
         name: "Questions"
     },
     {
         type: "input",
-        message: "Did you provide any tests? If so, could you provide any details",
-        name: "Tests"
-    }
-  ])
+        message: "What is your Github username",
+        name: "Username"
+    },
+    { 
+        type: "input",
+        message: "what is your email address?",
+        name: "Email"
+
+    },
+    
+  ]
 
 
 
-
+// write readme files
   function writeToFile (fileName, data) {
 
       fs.writeFile(fileName, data, function(err) {
@@ -66,9 +79,11 @@ const questions = ([
               console.log('Sucess!')
           }
       })
-  }
+}
 
 
+
+// initiate program
 function init () {
     inquirer.prompt (questions)
     .then(function(data) {
@@ -77,7 +92,7 @@ function init () {
     })
 }
 
-
+// function call to initiate program
 init();
 
 
