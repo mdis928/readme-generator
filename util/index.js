@@ -87,7 +87,7 @@ const questions = [
 function init () {
     inquirer.prompt (questions)
     .then(function(data) {
-        writeToFile("README.me", generatorMarkdown(data));
+        writeToFile("README.MD", generatorMarkdown(data));
         console.log(data)
     })
 }
