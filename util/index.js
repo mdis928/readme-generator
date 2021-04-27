@@ -43,7 +43,7 @@ const questions = [
     },
     {
         type: "input",
-        message: "Did you provide any tests? If so, could you provide any details",
+        message: "The following is needed to perform a test:",
         name: "Tests"
     },
     {

@@ -24,9 +24,9 @@ This project is licensed under the ${data.License} License.
 ## Contributing
 Contributors: ${data.Contributions}
 ## Test
-This following is needed to run the test: ${data.Tests}
+This following is needed to run a test: ${data.Tests}
 ## Questions
-If you have any questions about the repo, contact ${data.Username}
+If you have any questions about the repo, contact ${data.Contributions} at ${data.Username} via github or ${data.Email} via email
     `
 }
 
