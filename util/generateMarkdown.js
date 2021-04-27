@@ -20,13 +20,13 @@ The following dependencies must be installed to run the application
 In order to use this app, ${data.Usage}
 ## License
 This project is licensed under the ${data.License} License.
-![Github license](https://img.shields.io./badge/license-MIT-blue.svg)
+![Github license](https://img.shields.io/badge/license-MIT-blue)
 ## Contributing
 Contributors: ${data.Contributions}
 ## Test
 This following is needed to run the test: ${data.Tests}
 ## Questions
-If you have any questions about the repo, contact ${data.Questions}
+If you have any questions about the repo, contact ${data.Username}
     `
 }
 
