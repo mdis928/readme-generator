@@ -32,9 +32,10 @@ const questions = [
         name: "Usage"
     },
     {
-        type: "input",
+        type: "list",
         message: "What license is being used? (i.e...MIT)",
-        name: "License"
+        name: "License",
+        choices: ["MIT","APACHE 2.0", "GBL 3.0", "BSD 3", "None"]
     },
     {
         type: "input",
@@ -76,7 +77,7 @@ const questions = [
           if (err) {
                 return console.log(err)
           } else {
-              console.log('Sucess!')
+              console.log('Sucess! Check out the README.MD! :)')
           }
       })
 }
@@ -92,8 +93,27 @@ function init () {
     })
 }
 
+
+function generateBadge (data) {
+    if(data.license == "MIT"){
+        data.license = "[![Github license](https://img.shields.io/badge/license-MIT-blue)]"
+    } else if (data.license == "APACHE 2.0"){
+        data.license = "[![Github license](https://img.shields.io/badge/license-APACHE%202.0-green)]"
+    }
+
+}
+
+
+
+
+
 // function call to initiate program
 init();
+
+
+
+
+
 
 
 //   .then((data) => {
