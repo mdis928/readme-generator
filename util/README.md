@@ -16,7 +16,7 @@ The following dependencies must be installed to run the application:
 ## Usage
 In order to use this app, 
 ## License
-This project is licensed under: None
+This project is licensed under: [![Github license](https://img.shields.io/badge/license-MIT-blue)]
 ## Contributing
 Contributors: 
 ## Test

@@ -93,16 +93,6 @@ function init () {
 }
 
 
-function generateBadge (data) {
-    if(data.license == "MIT"){
-        data.license = "[![Github license](https://img.shields.io/badge/license-MIT-blue)]"
-    } else if (data.license == "APACHE 2.0"){
-        data.license = "[![Github license](https://img.shields.io/badge/license-APACHE%202.0-green)]"
-    }
-
-}
-
-
 
 // function call to initiate program
 init();
