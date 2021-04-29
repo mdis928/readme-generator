@@ -1,5 +1,4 @@
 
-
 function generateMarkdown(data) {
     if(data.License == "MIT"){
         data.License = "[![Github license](https://img.shields.io/badge/license-MIT-blue)]"
