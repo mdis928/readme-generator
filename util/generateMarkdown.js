@@ -12,7 +12,7 @@ function generateMarkdown(data) {
         data.license = "None"
     }
     
-    return `
+return `
     
 # ${data.Title}
 https://github.com/${data.Username}/${data.Title}
