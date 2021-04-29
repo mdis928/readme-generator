@@ -15,7 +15,7 @@ ${data.Description}
 * [Tests] (#tests)
 * [Questions] (#questions)
 ## Installiations 
-The following dependencies must be installed to run the application 
+The following dependencies must be installed to run the application: ${data.Installiation}
 ## Usage
 In order to use this app, ${data.Usage}
 ## License
